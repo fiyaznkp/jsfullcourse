@@ -6,11 +6,40 @@
     <title>Document</title>
 </head>
 <body>
-    <h2>Adults Plain Cotton T-shirt
+    <h2>Cart Quantity</h2>
+    <button onclick="
+     console.log(`cartQuantity:${cartQuantity}`)
+    "
+    >Show Quantity</button>
+    <button onclick="
+    cartQuantity = cartQuantity +1
 
-    <h3>Price:499</h3>
-    
-    <button onclick="alert('added to cart')">Add to Cart</button>
-    </h2>
+    console.log(`cartQuantity:${cartQuantity}`)
+
+    ">Add to Cart</button>
+
+    <button 
+    onclick="cartQuantity= cartQuantity + 2
+    console.log(`cartQuantity:${cartQuantity}`)
+    "
+    >+2</button>
+
+    <button
+    onclick="
+    cartQuantity = cartQuantity + 3
+    console.log(`cartQuantity:${cartQuantity}`)
+    "
+    >+3</button>
+
+    <button onclick="
+    cartQuantity = 0
+    console.log('cart is empty')
+    console.log(`cartQuantity:${cartQuantity}`)
+    ">Reset</button>
+</body>
+<script>
+    let cartQuantity =0
+</script>
+
 </body>
 </html>
