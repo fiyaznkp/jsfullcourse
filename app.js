@@ -1,11 +1,7 @@
-let pi =3.14
+const hour = 20 
 
-let radius;
-
-let circumference;
-
-radius = window.prompt("enter the radius of the circle")
-
-circumference = 2 * pi *radius
-
-console.log(circumference)
+if(hour> 0 && hour < 12){
+    console.log("good morning")
+}else{
+    console.log("evening")
+}
