@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Objects</title>
+</head>
+<body>
+    <script>
+  //getting object items using in normal way known as dot notation
+    //     const products = {
+    //         name:"socks",
+    //         sizes:"s,m,l,xl,xxl",
+    //         price:99
+    //     }
+    //    products.name ="cotton socks"
+    //    products.price =149
+
+    //    products.quantity =10
+
+    //    products.new = true
+
+    //    delete products.new
+    //     console.log(products)
+
+    // bracket notation
+
+    const products1 = {
+        name:"fiyaz",
+        about:{
+            age:26,
+            height:170
+        },
+        function: function inside(){
+            console.log('function inside a method')
+        },
+        fun: function one(one){
+            console.log(one)
+            return one
+        }
+    }
+
+    // products1.fun(1)
+// console.log(products1["name"])
+//console.log(products1.about.age)
+
+// products1.function()
+
+// console.log(JSON.stringify(products1))
+
+//here we have converted our js object to json using json object
+
+// converting json to js objects
+
+const convertToObject = JSON.stringify(products1)
+        
+ console.log(JSON.parse(convertToObject))
+    </script>
+</body>
+</html>
