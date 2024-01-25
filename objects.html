@@ -52,9 +52,66 @@
 
 // converting json to js objects
 
-const convertToObject = JSON.stringify(products1)
+// const convertToObject = JSON.stringify(products1)
         
- console.log(JSON.parse(convertToObject))
-    </script>
+//  console.log(JSON.parse(convertToObject))
+
+// const products ={
+//     item:"basketball",
+//     price:2095
+// }
+
+// products.price = 2595
+
+// products["delivery-time"]="3 days"
+
+// console.log(products)
+// // console.log(products)
+//  function comparePrice(product1,product2){
+//     if(product1 > product2){
+//         return product2
+//     }else{
+//         return product1
+//     }
+
+//  }
+//  console.log(comparePrice(190,200))
+
+// function isSameProduct(product1,product2){
+//     if(product1 === product2){
+//         return true
+//     }else return false
+// }
+// const pro1 = {
+//     name : "phone",
+//     price:25000
+// }
+// const pro2 = {
+//     name:"phone",
+//     price:25000
+// }
+
+// console.log(isSameProduct(pro1,pro2))
+
+// in this caase it shows false because if we compare two objects its shows false
+
+// instead we need to check using the properties of the two objects
+
+function isSameProduct(product1,product2){
+    if(product1.name === product2.name && product1.age===product2.age){
+        return true
+    }else return false
+}
+const pro1 = {
+  name: 'faris',
+  age:25
+}
+const pro2 = {
+    name:"faris",
+    age:25
+}
+
+console.log(isSameProduct(pro1,pro2))
+</script>
 </body>
 </html>
