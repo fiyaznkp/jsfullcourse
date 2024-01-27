@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <!-- <button>9A</button> -->
+   <!-- <button class="b1">9B</button> -->
+
+<!--    
+   <button onclick="choose('Heads')">Heads</button>
+   <button onclick="choose('Tails')">Tails</button>
+
+   
+
+   <p class="result"></p> -->
+
+   <input class="input" onkeydown="clickEnter(event)">
+   <button class="submit" onclick="displayName()">Submit</button>
+
+   <p class="result"></p>
+
+    <script>
+
+        function displayName (){
+             let inputElement = document.querySelector('.input')
+             let name = inputElement.value
+
+             let result = document.querySelector('.result')
+
+             result.innerHTML = `your name is ${name}`
+        }
+
+        function clickEnter (event){
+            if (event.key === 'Enter'){
+                displayName()
+            }
+        }
+//    function choose(options){
+//     let result = document.querySelector('.result')
+
+//     result.textContent = `You choose ${options}`
+//    }
+
+//   console.log(document.querySelector('button')) 
+
+// document.querySelector('.b1').innerHTML = "9B done!"
+
+    </script>
+</body>
+</html>
