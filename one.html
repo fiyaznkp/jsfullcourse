@@ -41,8 +41,8 @@
 <body>
     
     <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
-    <button  class="request-btn">Request Now</button>
-    <button class="schedule-btn">Schedule for later</button>
+    <button  class="request-btn" onclick="request()">Request Now</button>
+    <button class="schedule-btn" onclick="Schedule()">Schedule for later</button>
 <script>
     function addToCart(){
         let cartBtn = document.querySelector('.add-to-cart-btn')
@@ -50,9 +50,24 @@
             cartBtn.textContent= "Added to Cart"
         }else{
             cartBtn.textContent = "Add to Cart"
-        }
+        }   
+    }
 
-        
+    function request(){
+        let requestBtn = document.querySelector('.request-btn')
+       if(requestBtn.textContent==="Request Now"){
+        requestBtn.textContent = "Request Send"
+       }
+ else{
+        requestBtn.textContent = "Request Now"
+  } }
+
+    function Schedule(){
+          let scheduleBtn = document.querySelector('.schedule-btn')
+         if(scheduleBtn.textContent==="Schedule for later"){
+            scheduleBtn.textContent = "Scheduled for Later"
+         }else{
+          scheduleBtn.textContent = "Schedule for later"}
     }
 </script>
 </body>
