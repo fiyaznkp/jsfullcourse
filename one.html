@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        
+        .add-to-cart-btn{
+            background-color: rgb(236, 225, 15);
+            color:black;
+            height: 40px;
+            width: 200px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px;
+            box-sizing: border-box;
+            margin-right: 30px;
+        }
+        .request-btn{
+            background-color: black;
+            color: white;
+            font-weight: bold;
+            height: 40px;
+            width: 120px;
+            border: none;
+            border-radius: 10px;
+            margin-right: 25px;
+
+        }
+        .schedule-btn{
+            background-color: rgb(230,230230);
+            border: none;
+            height: 40px;
+            width: 120px;
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    
+    <button class="add-to-cart-btn" onclick="addToCart()">Add to Cart</button>
+    <button  class="request-btn">Request Now</button>
+    <button class="schedule-btn">Schedule for later</button>
+<script>
+    function addToCart(){
+        let cartBtn = document.querySelector('.add-to-cart-btn')
+        if(cartBtn.textContent==="Add to Cart"){
+            cartBtn.textContent= "Added to Cart"
+        }else{
+            cartBtn.textContent = "Add to Cart"
+        }
+
+        
+    }
+</script>
+</body>
+</html>
