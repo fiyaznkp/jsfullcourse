@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button class="is-button" onclick="checkClass()">Test</button>
+<script>
+function checkClass(){
+    let testBtn = document.querySelector('.is-button')
+
+    if(testBtn.classList.contains('is-button')){
+        console.log(`The button has "is-class" class`)
+    }else{
+        console.log(`The button does not have the "is-button" class`)
+    }
+}
+
+</script>
+
+</body>
+</html>

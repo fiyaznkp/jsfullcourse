@@ -55,20 +55,27 @@
 
     function request(){
         let requestBtn = document.querySelector('.request-btn')
+       
        if(requestBtn.textContent==="Request Now"){
-        requestBtn.textContent = "Request Send"
+        requestBtn.textContent = "Request Send";
+        scheduleBtn.style.display = "none"
+
        }
  else{
-        requestBtn.textContent = "Request Now"
+        requestBtn.textContent = "Request Now";
+       
   } }
 
     function Schedule(){
           let scheduleBtn = document.querySelector('.schedule-btn')
+          
          if(scheduleBtn.textContent==="Schedule for later"){
-            scheduleBtn.textContent = "Scheduled for Later"
+            scheduleBtn.textContent = "Scheduled for Later";
+            
          }else{
-          scheduleBtn.textContent = "Schedule for later"}
-    }
+          scheduleBtn.textContent = "Schedule for later";
+          
+         }}
 </script>
 </body>
 </html>
