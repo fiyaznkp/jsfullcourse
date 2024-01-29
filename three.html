@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .gaming-btn{
+            background-color:honeydew;
+            border: none;
+            font-weight: bold;
+            width: 100px;
+            height: 40px;
+            cursor: pointer;
+            border-radius: 5px;
+
+        }
+        .is-toggled{
+            color: white;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <button class="gaming-btn" onclick="toggleBtn()">Gaming</button>
+    <script>function toggleBtn(){
+        let gamingBtn = document.querySelector('.gaming-btn')
+
+        if(gamingBtn.classList.contains('is-toggled')){
+            gamingBtn.classList.remove('is-toggled')
+        }else{
+            gamingBtn.classList.add('is-toggled')
+        }
+
+
+    }
+        </script>
+</body>
+</html>
