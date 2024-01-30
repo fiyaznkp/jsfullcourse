@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        .gaming-btn{
+        .btns{
             background-color:honeydew;
             border: none;
             font-weight: bold;
@@ -13,6 +13,7 @@
             height: 40px;
             cursor: pointer;
             border-radius: 5px;
+            margin-right: 20px;
 
         }
         .is-toggled{
@@ -23,15 +24,19 @@
 </head>
 
 <body>
-    <button class="gaming-btn" onclick="toggleBtn()">Gaming</button>
-    <script>function toggleBtn(){
-        let gamingBtn = document.querySelector('.gaming-btn')
+    <button class="btns" onclick="toggleBtn(this)">Gaming</button>
+    <button class="btns" onclick="toggleBtn(this)">Music</button>
+    <button class="btns" onclick="toggleBtn(this)">Tech</button>
+    <script>function toggleBtn(allButtons){
 
-        if(gamingBtn.classList.contains('is-toggled')){
-            gamingBtn.classList.remove('is-toggled')
-        }else{
-            gamingBtn.classList.add('is-toggled')
-        }
+        allButtons.classList.toggle('is-toggled')
+        // let gamingBtn = document.querySelector('.btns')
+
+        // if(gamingBtn.classList.contains('is-toggled')){
+        //     gamingBtn.classList.remove('is-toggled')
+        // }else{
+        //     gamingBtn.classList.add('is-toggled')
+        // }
 
 
     }
