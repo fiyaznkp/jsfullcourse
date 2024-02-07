@@ -18,14 +18,22 @@
 //     console.log('hey')
 // }
 // greeting()
-const obj={
-    name:"fiyaz",
-    age:26,
-    fun:function greeting(){
-        console.log("one")
-    }
+// const obj={
+//     name:"fiyaz",
+//     age:26,
+//     fun:function(){
+//         console.log("one")
+//     }
+// }
+// obj.fun()
+// console.log(obj.age)
+function one(param){
+  param()
 }
-obj.fun()
+one(function(){
+    console.log("hai")
+})
+
     </script>
 </body>
 </html>
