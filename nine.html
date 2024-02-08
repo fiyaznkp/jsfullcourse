@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button onclick="" class="add-button">Add</button>
+    <script>
+        let buttonElement =document.querySelector('.add-button')
+       let click2= ()=>{
+            console.log('click2')
+        }
+        
+        buttonElement.addEventListener('click',()=>{
+            console.log('click')
+        })
+        buttonElement.addEventListener('click',click2)
+
+        // how to remove a addEventListener
+
+        buttonElement.removeEventListener('click',click2)
+    </script>
+</body>
+</html>
