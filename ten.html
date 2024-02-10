@@ -59,6 +59,28 @@
 // }
 // console.log(addNum([-2,-1,0,99],2))
 
+// function removeEggs(foods){
+//   return foods.filter((food)=>food!=='egg')
+// }
+// console.log(removeEggs(['egg','apple','egg','egg','ham']))
+
+function removeEggs(foods){
+  let eggsRemoved=0
+
+  return foods.filter((food)=>{
+    if(food==='egg'&& eggsRemoved<2){
+    eggsRemoved++
+        return false
+    }return true
+  })
+  
+}
+console.log(removeEggs(['egg','apple','egg','egg','ham']))
+
+
+
+
+
 
 
 
