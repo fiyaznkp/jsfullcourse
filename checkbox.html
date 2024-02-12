@@ -1,0 +1,65 @@
+<style>
+    body{
+   font-family:Verdana, Geneva, Tahoma, sans-serif;
+   font-size: 20px;
+   cursor: pointer;
+    }
+    #submit-button{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 20px;
+        padding: 5px 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+</style>
+
+<input type="checkbox" id="mycheckBox" >
+<label id="subscribe-label"
+ for="mycheckBox">Subscribe</label> <br> <br>
+
+<input type="radio" id="visaCard" name="cards">
+<label for="visa">Visa</label> <br>
+
+<input type="radio" id="masterCard" name="cards">
+<label for="masterCard">MasterCard</label> <br>
+
+<input type="radio" id="paypal" name="cards">
+<label for="paypal">Paypal</label> <br> <br>
+
+<button type="submit" id="submit-button">Submit</button> <br>
+<p id="submit-result"></p>
+<p id="payment-result"></p>
+
+<script>
+   
+    let mycheckBox = document.getElementById('mycheckBox')
+    let subscribeLabel =document.getElementById('subscribe-label')
+    let visaCard = document.getElementById('visaCard')
+    let masterCard = document.getElementById('masterCard')
+    let paypal = document.getElementById('paypal')
+    let submitButton = document.getElementById('submit-button')
+    let submitResult = document.getElementById('submit-result')
+    let paymentResult = document.getElementById('payment-result')
+
+submitButton.onclick = function (){
+    if(mycheckBox.checked){
+        subscribeLabel.textContent = `Subscribed`
+        submitResult.textContent = `You are subscribed`
+    }else{
+        subscribeLabel.textContent =`You are not subscribed`
+        submitResult.textContent = `You are not subscribed`
+    }
+    if(visaCard.checked){
+        paymentResult.textContent = `You are paying with Visa Card`
+    }else if(masterCard.checked){
+        paymentResult.textContent =`You are paying with Master Card`
+    }
+    else if(paypal.checked){
+        paymentResult.textContent=`You are paying with Paypal `
+    }else {
+        paymentResult.textContent = `You are not paid`
+    }
+}
+
+
+</script>
