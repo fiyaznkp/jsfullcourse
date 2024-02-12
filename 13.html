@@ -1,0 +1,80 @@
+<!-- <h1 id="h1">Register</h1>
+<label>UserName:</label>
+<input id="user-name"> <br> 
+<label>Email:</label>
+<input id="email"><br><br>
+<button id="Submit-button">Submit</button>
+
+
+<script>
+
+    let userName;
+    let Email;
+document.getElementById('Submit-button').onclick = function (){
+   userName= document.getElementById('user-name').value
+          Email= document.getElementById('email').value
+    document.getElementById('h1').textContent = `${userName} you have sucessfully registered with ${Email} `
+
+    
+}
+
+</script> -->
+<style>
+    #count-label{
+         display: block;
+         cursor: pointer;
+         font-size: 50px;
+         text-align: center;
+         font-family: Arial, Helvetica, sans-serif;
+    }
+    #buttons-div{
+        text-align: center;
+    }
+    .buttons{
+        font-size: 30px;
+        padding: 10px 10px;
+        color: white;
+        background-color: rgb(78, 78, 84) ;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background-color 0.2s;
+    }
+    .buttons:hover{
+        background-color: rgb(120, 120, 168);
+    }
+</style>
+
+
+<div id="buttons-div">
+<label id="count-label">0</label> <br>
+<button id="increase-button" class="buttons">++</button>
+<button id="decrease-button" class="buttons">--</button>
+<button id="reset-button" class="buttons">Reset</button>
+</div>
+
+<script>
+
+    let increaseButton = document.getElementById('increase-button')
+    let decreaseButton = document.getElementById('decrease-button')
+    let resetButton = document.getElementById('reset-button')
+    let countLabel = document.getElementById('count-label')
+    let count =0;
+
+increaseButton.onclick = function (){
+    count ++;
+    countLabel.textContent =count
+}
+decreaseButton.onclick = function (){
+    if(count<=0){
+        count
+        countLabel.textContent =count
+    }
+    else count --
+    countLabel.textContent =count
+}
+resetButton.onclick =function (){
+    count =0
+    countLabel.textContent=count
+}
+
+</script>
