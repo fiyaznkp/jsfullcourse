@@ -19,5 +19,62 @@
     <p>Price: $7.99</p>
     <button onclick="alert('Added')" class="cart-button">Add to Cart</button>
     <button onclick="alert('Loading...'); alert('Purchased')" class="buy-now-button">Buy Now</button> -->
+
+<h1 id="h1">Welcome</h1>
+<label>UserName:</label>
+<input id="MyText"><br><br>
+<button id="Submit-button">Submit</button>
+
+ <script>
+ 
+let userName;
+ document.getElementById('Submit-button').onclick = function (){
+    userName = document.getElementById('MyText').value
+  console.log(userName)
+  document.getElementById('h1').textContent= `Hello ${userName}`
+    
+ }
+ 
+//  function checkEmail(email){
+    // if(email.includes('@')){
+    //     return true
+    // }else return false
+
+    // return email.includes('@')? true: false
+// }
+//  console.log(checkEmail('fiyaz123'))
+
+ // spread operator in js
+
+//  let numbers =[1,2,3,4]
+
+//  let max = Math.max(...numbers)
+//  let min = Math.min(...numbers)
+
+//  console.log(max)
+//  console.log(min)
+
+// let numbers =[1,2,3]
+
+// console.log(...numbers)
+
+// accepting js user input in simplest way and professional way
+
+// simplest way
+
+// let userName = window.prompt('what is your username')
+
+// console.log(userName)
+ 
+
+
+
+
+
+
+
+
+    </script>
+    
 </body>
 </html>
