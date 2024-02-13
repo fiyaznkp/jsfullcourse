@@ -1,0 +1,33 @@
+<script>
+    let min =50
+    let max =100
+    let result =Math.floor(Math.random()* (max-min +1)) + min
+
+    let attempts =0
+    let guess;
+    let running =true
+
+    while(running){
+     guess = window.prompt(`Guess a number between ${min} - ${max}`)
+     guess = Number(guess)
+
+     if(isNaN(guess)){
+        window.alert(`Enter a valid number`)
+     }
+     else if (guess<min||guess>max){
+        window.alert(`Enter numbers between ${min}-${max}`)
+     }else {
+        attempts ++
+        if(guess<result){
+            window.alert(`Your guess lower than the result`)
+        }
+        else if(guess>result){
+            window.alert(`Your guess is higher than the result`)
+        }else{
+            window.alert(`Your guess is ${guess} is true and it takes ${attempts} attempts`)
+        }
+     }
+    }
+
+    console.log(result)
+</script>
