@@ -56,22 +56,27 @@
 
 // console.log(JSON.parse(localStorage.getItem('data')))
 
+let token = localStorage.getItem('token')
+let input = document.querySelector('input')
+let loginBtn = document.querySelector('#login')
+let logoutBtn = document.querySelector('#logout')
+let h1 = document.querySelector('h1')
 
-// let input = document.querySelector('input')
-// let loginBtn = document.querySelector('#login')
-// let logoutBtn = document.querySelector('#logout')
-// let h1 = document.querySelector('h1')
+if(token){
+    h1.innerText="welcome User"
+}
 
-// loginBtn.onclick = ()=>{
-//     if(input.value){
-//         localStorage.setItem('token', input.value)
-//         h1.innerText = 'Welcome User'
-//     }
-// }
-// logoutBtn.onclick = ()=>{
-//     localStorage.clear()
-//     location.reload()
-// }
+loginBtn.onclick = ()=>{
+    if(input.value){
+        localStorage.setItem('token', input.value)
+        h1.innerText = 'Welcome User'
+    }
+}
+logoutBtn.onclick = ()=>{
+    localStorage.clear()
+    location.reload()
+}
+
 
 
 
