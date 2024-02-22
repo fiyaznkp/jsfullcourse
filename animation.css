@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+    background-color: rgb(4,224,188);
+}
+div{
+    background-color: white;
+    margin: 5px;
+    width: 200px;
+    height: 200px;
+     /* animation: expand 3s ease-in-out 1s infinite; */
+    transition: background-color 2s ease-in-out
+}
+div:hover{
+    /* animation-play-state: paused; */
+    background-color:yellow;
+    /* transform: scale(1.3) rotate(45deg) */
+     /* transform: skew(45deg); */
+    /* transform: translateX(50px); */
+    /* transform-origin: top left; */
+}
+
+/* using from method */
+/* @keyframes expand {
+    from {
+        width: 200px;
+    }
+    to{
+        width: 500px;
+    }
+} */
+
+/* using percentage method */
+
+@keyframes expand{
+    0%{
+        width: 200px;
+     
+    }
+    50%{
+        width: 500px;
+       
+    }
+    100%{
+        width: 200px;
+       
+    }
+}
