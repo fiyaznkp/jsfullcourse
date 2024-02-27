@@ -8,9 +8,43 @@ body{
 }
 
 /* css selectors */
-h1[class='odd']{
+/* h1[class='odd']{
     color: blue;
 }
 h1[class='even']{
     color: bisque;
 }
+h1[class*='odd']{
+  color:black;
+}
+
+/* here dollar sign is used to check the last number of the class name */
+/* h1[class$='zero']{
+    color: brown;
+} */
+
+/* h1[class='zero']{
+    color: crimson;
+} */ 
+
+/* > is used to select the direct children of that class and ~ is used to call next class's childs */
+
+/* .div ~ .div h1{
+    color: blue; now second third div class items are blue 
+} */
+
+
+/* + symbol only takes the next class  */
+/* .div + .div h1{
+    color: cadetblue;
+} */  
+
+/* .main{
+    outline: 1px solid;
+    text-align: center;
+    scale: 1.2;
+   translate: -20%; 
+
+}
+
+*/
