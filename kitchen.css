@@ -17,3 +17,14 @@ body{
     margin-top:70px
     
 }
+.input{
+    cursor: pointer;
+}
+.add-btn{
+    cursor: pointer;
+    color: white;
+    background-color: black;
+}
+.kitchen-items{
+    list-style: none;
+}
