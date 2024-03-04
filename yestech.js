@@ -33,3 +33,34 @@
 // function remove(){
 //    myh1.remove()
 // }
+// let heading = document.getElementById('heading')
+// let btn = document.getElementById('btn')
+
+// btn.addEventListener('click',changeColour)
+// heading.addEventListener('mouseover',changeBg)
+
+// function changeColour(){
+//     heading.style.color = 'red'
+// }
+// function changeBg(){
+//     heading.style.backgroundColor = 'green'
+// }
+
+// oops in js
+
+class employee {
+    constructor (name,age,position,salary){
+        this.name =name;
+        this.age=age;
+        this.position =position;
+        this.salary=salary
+    }
+    getSalary(){
+        console.log((`salary of ${this.name} is ${this.salary}`))
+    }
+}
+let employee1 = new employee('john',30,"Manager",40000)
+let employee2 = new employee('jacob',32,'HR',32000)
+employee1.getSalary()
+employee2.getSalary()
+console.log(employee1.name)
