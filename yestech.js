@@ -64,3 +64,13 @@ let employee2 = new employee('jacob',32,'HR',32000)
 employee1.getSalary()
 employee2.getSalary()
 console.log(employee1.name)
+
+// inheritance in oops
+
+class Manager extends employee {
+
+}
+let Manager1 = new Manager('smith',34,'Manager',45000)
+console.log(Manager1)
+Manager1.getSalary()
+console.log(Manager1.name)
