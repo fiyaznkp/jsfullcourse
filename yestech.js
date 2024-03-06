@@ -133,9 +133,64 @@ let Bike3 = new Bikes('royal enfield bullet classic 350','army green',175000)
 // Bikes.message()
 // inheritance 
 
-class sportsBikes extends Bikes{
+// class sportsBikes extends Bikes{
 
-}
-let sportsBike1 = new sportsBikes('ktm duke 390','orange',200000)
+// }
+// let sportsBike1 = new sportsBikes('ktm duke 390','orange',200000)
 
-sportsBike1.bikeDetails()
+// sportsBike1.bikeDetails()
+
+// rest parameter
+
+// function sum(num1,num2,...nums){
+//     let result =0
+//     for(x of nums){
+//         result += x
+//     }
+//     console.log(result+num1+num2)
+// }
+// sum(12,23,4,12)
+
+// spread operator 
+
+// it helps to unpack arrays,
+// let arr = [1,2,3]
+
+// console.log(...arr)
+
+// here the result will be just 1,2,3 removing array
+
+// copying arrays
+
+// let a =[1,2]
+
+// let b =[...a]
+// console.log(b) 
+
+// concating
+
+// let a =[1,2]
+// let b =[3,4]
+// let c =[...a,...b]
+// console.log(c)
+
+// adding a number 
+
+// let a =[1,2]
+// let b =[3,4]
+// let c =[...a,10,...b]
+// console.log(c)
+
+// spread operator in objects
+
+// let obj1={
+//     name:'fiyaz'
+// }
+// let obj2={
+//     age:26
+// }
+// let obj3={
+//     place:'koduvally'
+// }
+// let obj4 = {height:170,...obj1,...obj2,...obj3}
+// console.log(obj4)
