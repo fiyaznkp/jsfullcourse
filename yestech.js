@@ -194,3 +194,7 @@ let Bike3 = new Bikes('royal enfield bullet classic 350','army green',175000)
 // }
 // let obj4 = {height:170,...obj1,...obj2,...obj3}
 // console.log(obj4)
+
+// destructuring in js
+
+// array 
