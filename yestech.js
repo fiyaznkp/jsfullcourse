@@ -198,3 +198,5 @@ let Bike3 = new Bikes('royal enfield bullet classic 350','army green',175000)
 // destructuring in js
 
 // array 
+
+
